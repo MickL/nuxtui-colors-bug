@@ -22,8 +22,10 @@ const rows = [
 <template>
   <UTable :columns :rows>
     <template #colors-data="{row}">
-      <UBadge :color="row.color" variant="subtle">Subtle Badge</UBadge>
-      <UButton :color="row.color" variant="soft">Soft Button</UButton>
+      <div class="space-x-2">
+        <UBadge :color="row.color" variant="subtle">Subtle Badge</UBadge>
+        <UButton :color="row.color" variant="soft">Soft Button</UButton>
+      </div>
     </template>
   </UTable>
 </template>
