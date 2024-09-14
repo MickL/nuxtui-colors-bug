@@ -1,0 +1,32 @@
+<script setup lang="ts">
+const isVisible = ref(false);
+
+const columns = [
+  {
+    key: 'colors'
+  }
+]
+const rows = [
+  {
+    color: 'yellow',
+  },
+  {
+    color: 'red',
+  },
+  {
+    color: 'green',
+  }
+]
+</script>
+
+<template>
+  <UTable :columns :rows>
+    <template #colors-data="{row}">
+      <UBadge :color="row.color" variant="subtle">Subtle Badge</UBadge>
+      <UButton :color="row.color" variant="soft">Soft Button</UButton>
+    </template>
+  </UTable>
+
+  <UBadge color="yellow" variant="subtle">Subtle Badge</UBadge>
+  <UButton color="yellow" variant="soft">Soft Button</UButton>
+</template>
