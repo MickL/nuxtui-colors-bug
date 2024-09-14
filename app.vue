@@ -26,7 +26,4 @@ const rows = [
       <UButton :color="row.color" variant="soft">Soft Button</UButton>
     </template>
   </UTable>
-
-  <UBadge color="yellow" variant="subtle">Subtle Badge</UBadge>
-  <UButton color="yellow" variant="soft">Soft Button</UButton>
 </template>
